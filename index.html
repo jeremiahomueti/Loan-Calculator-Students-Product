@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Loan Calculator</title>
+  </head>
+  <body>
+    <div id="studentLoan">
+      <h1>Loan Calculator</h1>
+      <h3>
+        Monthly Income: ₦
+        <input
+          type="number"
+          id="monthly_income"
+          value="0"
+          onchange="computeLoan()"
+        />
+      </h3>
+      <h3>
+        Other Repayments: ₦
+        <input
+          type="number"
+          id="other_repayments"
+          value="0"
+          onchange="computeLoan()"
+        />
+      </h3>
+      <h3>
+        Interest Rate:
+        <input type="" id="interest_rate" value="0" onchange="computeLoan()" />
+      </h3>
+      <h3>
+        Loan Tenor:
+        <input
+          type="number"
+          id="loan_tenor"
+          value="10"
+          onchange="computeLoan()"
+        />
+      </h3>
+
+      <h3>
+        Loan Amount:
+        <input
+          type="number"
+          id="loan_amount"
+          value="0"
+          onchange="computeLoan()"
+        />
+      </h3>
+
+      <!-- <h3 id="loan_amount">Loan Amount:</h3> -->
+      <h3 id="principal"></h3>
+      <h3 id="interest_amount">Interest Amount:</h3>
+      <h3 id="repayment_amount">Repayment Amount:</h3>
+      <h3 id="emi_without_repayment"></h3>
+      <h3 id="global_emi"></h3>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
